@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist Executivo</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Checklist de Execução</h1>
+
+        <!-- Execução: Primária -->
+        <div class="execucao">
+            <h2>Execução: Primária</h2>
+
+            <div class="check-item">
+                <label for="limpeza">Limpeza</label>
+                <div>
+                    <input type="radio" id="limpeza-sim" name="limpeza" value="sim"> Concluído
+                    <input type="radio" id="limpeza-nao" name="limpeza" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-limpeza" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="excessos">Excessos</label>
+                <div>
+                    <input type="radio" id="excessos-sim" name="excessos" value="sim"> Concluído
+                    <input type="radio" id="excessos-nao" name="excessos" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-excessos" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="etiquetas">Etiquetas</label>
+                <div>
+                    <input type="radio" id="etiquetas-sim" name="etiquetas" value="sim"> Concluído
+                    <input type="radio" id="etiquetas-nao" name="etiquetas" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-etiquetas" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="frente">Frente</label>
+                <div>
+                    <input type="radio" id="frente-sim" name="frente" value="sim"> Concluído
+                    <input type="radio" id="frente-nao" name="frente" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-frente" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="planograma">Planograma</label>
+                <div>
+                    <input type="radio" id="planograma-sim" name="planograma" value="sim"> Concluído
+                    <input type="radio" id="planograma-nao" name="planograma" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-planograma" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="agenda">Agenda de Trabalho</label>
+                <div>
+                    <input type="radio" id="agenda-sim" name="agenda" value="sim"> Concluído
+                    <input type="radio" id="agenda-nao" name="agenda" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-agenda" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="proximo-vencimento">Próximo ao vencimento</label>
+                <div>
+                    <input type="radio" id="proximo-vencimento-sim" name="proximo-vencimento" value="sim"> Concluído
+                    <input type="radio" id="proximo-vencimento-nao" name="proximo-vencimento" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-proximo-vencimento" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="checkout-reposto">Check-out reposto</label>
+                <div>
+                    <input type="radio" id="checkout-reposto-sim" name="checkout-reposto" value="sim"> Concluído
+                    <input type="radio" id="checkout-reposto-nao" name="checkout-reposto" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-checkout-reposto" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="geladeira-reposta">Geladeira Reposta</label>
+                <div>
+                    <input type="radio" id="geladeira-reposta-sim" name="geladeira-reposta" value="sim"> Concluído
+                    <input type="radio" id="geladeira-reposta-nao" name="geladeira-reposta" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-geladeira-reposta" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="remarcacao-dia">Remarcação do dia</label>
+                <div>
+                    <input type="radio" id="remarcacao-dia-sim" name="remarcacao-dia" value="sim"> Concluído
+                    <input type="radio" id="remarcacao-dia-nao" name="remarcacao-dia" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-remarcacao-dia" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="sem-exposicao">Sem Exposição pirata</label>
+                <div>
+                    <input type="radio" id="sem-exposicao-sim" name="sem-exposicao" value="sim"> Concluído
+                    <input type="radio" id="sem-exposicao-nao" name="sem-exposicao" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-sem-exposicao" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="cubo-reposicao">Cubo reposição</label>
+                <div>
+                    <input type="radio" id="cubo-reposicao-sim" name="cubo-reposicao" value="sim"> Concluído
+                    <input type="radio" id="cubo-reposicao-nao" name="cubo-reposicao" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-cubo-reposicao" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="limpeza-baguete">Limpeza da Baguete</label>
+                <div>
+                    <input type="radio" id="limpeza-baguete-sim" name="limpeza-baguete" value="sim"> Concluído
+                    <input type="radio" id="limpeza-baguete-nao" name="limpeza-baguete" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-limpeza-baguete" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="troca-baguete">Troca de baguete</label>
+                <div>
+                    <input type="radio" id="troca-baguete-sim" name="troca-baguete" value="sim"> Concluído
+                    <input type="radio" id="troca-baguete-nao" name="troca-baguete" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-troca-baguete" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="testeira-nova">Testeira nova</label>
+                <div>
+                    <input type="radio" id="testeira-nova-sim" name="testeira-nova" value="sim"> Concluído
+                    <input type="radio" id="testeira-nova-nao" name="testeira-nova" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-testeira-nova" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="balcao-limpo">Balcão Limpo</label>
+                <div>
+                    <input type="radio" id="balcao-limpo-sim" name="balcao-limpo" value="sim"> Concluído
+                    <input type="radio" id="balcao-limpo-nao" name="balcao-limpo" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-balcao-limpo" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="mousepad">Mousepad Institucional</label>
+                <div>
+                    <input type="radio" id="mousepad-sim" name="mousepad" value="sim"> Concluído
+                    <input type="radio" id="mousepad-nao" name="mousepad" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-mousepad" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+        </div>
+
+        <!-- Execução: Promocionalização -->
+        <div class="execucao">
+            <h2>Execução: Promocionalização</h2>
+            
+            <div class="check-item">
+                <label for="etiquetas-vantagens">Etiquetas de Vantagens (LMPM)</label>
+                <div>
+                    <input type="radio" id="etiquetas-vantagens-sim" name="etiquetas-vantagens" value="sim"> Concluído
+                    <input type="radio" id="etiquetas-vantagens-nao" name="etiquetas-vantagens" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-etiquetas-vantagens" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="etiquetas-cubo">Etiquetas de Cubo</label>
+                <div>
+                    <input type="radio" id="etiquetas-cubo-sim" name="etiquetas-cubo" value="sim"> Concluído
+                    <input type="radio" id="etiquetas-cubo-nao" name="etiquetas-cubo" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-etiquetas-cubo" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="etiquetas-pallets">Etiquetas de Pallets</label>
+                <div>
+                    <input type="radio" id="etiquetas-pallets-sim" name="etiquetas-pallets" value="sim"> Concluído
+                    <input type="radio" id="etiquetas-pallets-nao" name="etiquetas-pallets" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-etiquetas-pallets" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="monta-desconta">Monta de Desconta</label>
+                <div>
+                    <input type="radio" id="monta-desconta-sim" name="monta-desconta" value="sim"> Concluído
+                    <input type="radio" id="monta-desconta-nao" name="monta-desconta" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-monta-desconta" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="capa-antenas">Capa de Antenas</label>
+                <div>
+                    <input type="radio" id="capa-antenas-sim" name="capa-antenas" value="sim"> Concluído
+                    <input type="radio" id="capa-antenas-nao" name="capa-antenas" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-capa-antenas" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="capa-cubo">Capa de Cubo</label>
+                <div>
+                    <input type="radio" id="capa-cubo-sim" name="capa-cubo" value="sim"> Concluído
+                    <input type="radio" id="capa-cubo-nao" name="capa-cubo" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-capa-cubo" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="stoppers">Stoppers</label>
+                <div>
+                    <input type="radio" id="stoppers-sim" name="stoppers" value="sim"> Concluído
+                    <input type="radio" id="stoppers-nao" name="stoppers" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-stoppers" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="tira-strip">Tira Strip abastecida e com preço</label>
+                <div>
+                    <input type="radio" id="tira-strip-sim" name="tira-strip" value="sim"> Concluído
+                    <input type="radio" id="tira-strip-nao" name="tira-strip" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-tira-strip" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="kit-promocional">Kit Promocional</label>
+                <div>
+                    <input type="radio" id="kit-promocional-sim" name="kit-promocional" value="sim"> Concluído
+                    <input type="radio" id="kit-promocional-nao" name="kit-promocional" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-kit-promocional" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+        </div>
+
+        <!-- Execução: Organização -->
+        <div class="execucao">
+            <h2>Execução: Organização</h2>
+
+            <div class="check-item">
+                <label for="corredores-desobstruidos">Corredores Desobstruídos</label>
+                <div>
+                    <input type="radio" id="corredores-desobstruidos-sim" name="corredores-desobstruidos" value="sim"> Concluído
+                    <input type="radio" id="corredores-desobstruidos-nao" name="corredores-desobstruidos" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-corredores-desobstruidos" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="caixas-organizadas">Caixas Organizadas</label>
+                <div>
+                    <input type="radio" id="caixas-organizadas-sim" name="caixas-organizadas" value="sim"> Concluído
+                    <input type="radio" id="caixas-organizadas-nao" name="caixas-organizadas" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-caixas-organizadas" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="estoque-organizado">Estoque organizado e limpo</label>
+                <div>
+                    <input type="radio" id="estoque-organizado-sim" name="estoque-organizado" value="sim"> Concluído
+                    <input type="radio" id="estoque-organizado-nao" name="estoque-organizado" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-estoque-organizado" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="proprios-improprios">Próprios e Impróprios organizados e identificados</label>
+                <div>
+                    <input type="radio" id="proprios-improprios-sim" name="proprios-improprios" value="sim"> Concluído
+                    <input type="radio" id="proprios-improprios-nao" name="proprios-improprios" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-proprios-improprios" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="contratos-atualizados">Contratos Atualizados</label>
+                <div>
+                    <input type="radio" id="contratos-atualizados-sim" name="contratos-atualizados" value="sim"> Concluído
+                    <input type="radio" id="contratos-atualizados-nao" name="contratos-atualizados" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-contratos-atualizados" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="retaguarda-limpa">Retaguarda Limpa e sem Excessos</label>
+                <div>
+                    <input type="radio" id="retaguarda-limpa-sim" name="retaguarda-limpa" value="sim"> Concluído
+                    <input type="radio" id="retaguarda-limpa-nao" name="retaguarda-limpa" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-retaguarda-limpa" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="vestiario-organizado">Vestiário Organizado e Identificados</label>
+                <div>
+                    <input type="radio" id="vestiario-organizado-sim" name="vestiario-organizado" value="sim"> Concluído
+                    <input type="radio" id="vestiario-organizado-nao" name="vestiario-organizado" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-vestiario-organizado" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="painel-atualizado">Painéis Atualizados</label>
+                <div>
+                    <input type="radio" id="painel-atualizado-sim" name="painel-atualizado" value="sim"> Concluído
+                    <input type="radio" id="painel-atualizado-nao" name="painel-atualizado" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-painel-atualizado" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+            <div class="check-item">
+                <label for="cozinha-limpa">Cozinha Limpa e pia vazia</label>
+                <div>
+                    <input type="radio" id="cozinha-limpa-sim" name="cozinha-limpa" value="sim"> Concluído
+                    <input type="radio" id="cozinha-limpa-nao" name="cozinha-limpa" value="nao"> Não Concluído
+                </div>
+                <textarea id="motivo-cozinha-limpa" class="motivo" placeholder="Caso não concluído, informe o motivo..." style="display: none;"></textarea>
+            </div>
+
+        </div>
+
+        <button id="resultado">Verificar Resultado</button>
+        <div id="resultado-final"></div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
